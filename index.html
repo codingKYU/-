@@ -23,29 +23,59 @@
     <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
 
     <style>
-        .wrap{
+        .wrap {
             width: 900px;
 
             margin: auto;
         }
+
+        .position-box{
+            width: 500px;
+
+            margin: auto;
+
+            border: 2px solid black;
+            border-radius: 5px;
+            
+            padding: 30px 30px 30px 30px;
+            margin-bottom: 30px;
+        }
+
+        .comment-box{
+            height: 100px;
+        }
+
+
     </style>
 </head>
 
 <body>
-    <div class = "wrap">
-        <div class="jumbotron">
-            <h1 class="display-4">Hello, world!</h1>
-            <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
-                featured content or information.</p>
-            <hr class="my-4">
-            <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-            <p class="lead">
-                <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
-            </p>
+<div class="wrap">
+    <div class="jumbotron">
+        <h1 class="display-4">Hello, world!</h1>
+        <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to
+            featured content or information.</p>
+        <hr class="my-4">
+        <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+        </p>
+    </div>
+    <div class="position-box edge-design">
+        <div class="form-group">
+            <label for="exampleInputEmail1">아티클 URL</label>
+            <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
         </div>
-        <div class="card-columns">
+        <div class="form-group">
+            <label for="exampleInputPassword1">간단 코멘트</label>
+            <input type="password" class="form-control comment-box" id="exampleInputPassword1">
+        </div>
+        <button type="submit" class="btn btn-primary">기사저장</button>
+    </div>
+    <div class="card-columns">
         <div class="card">
-            <img class="card-img-top" src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
+            <img class="card-img-top"
+                 src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
                  alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title that wraps to a new line</h5>
@@ -54,7 +84,8 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
+            <img class="card-img-top"
+                 src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
                  alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title that wraps to a new line</h5>
@@ -63,7 +94,8 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
+            <img class="card-img-top"
+                 src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
                  alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title that wraps to a new line</h5>
@@ -72,7 +104,8 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
+            <img class="card-img-top"
+                 src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
                  alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title that wraps to a new line</h5>
@@ -81,7 +114,8 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
+            <img class="card-img-top"
+                 src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
                  alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title that wraps to a new line</h5>
@@ -90,7 +124,8 @@
             </div>
         </div>
         <div class="card">
-            <img class="card-img-top" src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
+            <img class="card-img-top"
+                 src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg"
                  alt="Card image cap">
             <div class="card-body">
                 <h5 class="card-title">Card title that wraps to a new line</h5>
@@ -99,7 +134,7 @@
             </div>
         </div>
     </div>
-    </div>
+</div>
 </body>
 
 </html>
