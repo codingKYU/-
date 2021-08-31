@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+            integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+            crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+            integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+            crossorigin="anonymous"></script>
+
+    <title>스파르타코딩클럽 | 부트스트랩 연습하기</title>
+
+    <style>
+        .myimg {
+            text-align: center;
+
+            padding-bottom: 30px;
+        }
+
+        .wrap {
+            width: 700px;
+
+            margin: auto;
+        }
+
+        .space {
+            padding: 10px 0px 10px 0px;
+        }
+    </style>
+
+    <script>
+        $(document).ready(function () {
+            q1()
+        });
+        function q1() {
+            $.ajax({
+                type: "GET",
+                url: "http://spartacodingclub.shop/sparta_api/rate",
+                data: {},
+                success: function (response) {
+                    let money_rate = response['rate'];
+
+                    let temp_html = money_rate;
+                    $('#rate_money').empty();
+                    $('#rate_money').append(temp_html);
+                    }
+                }
+            )
+        }
+    </script>
+</head>
+
+<body>
+<div class="wrap">
+    <div class="myimg">
+        <img src="https://vmspace.com/ActiveFile/spacem.org/project/T_Dessau_Bauhausgebaeude_T.jpg" alt="Architecture"
+             width="700" height="400">
+    </div>
+    <h1 style="display: inline">건축물</h1>
+    <h5 style="display: inline">가격 : 부르는게 값이야</h5><br>
+    건축물이라 함은 건축가의 생각과 이념 그리고 가치관이 들어간 물체로서 만드는데에도 많은 시간이 소요될 뿐만 아니라 사용하는데에도 정말 많은 시간이 소요된다. 그 만큼 더욱 신중하게 정해야 할 물체이며 사람의
+    라이프 스타일을 대변한다고 볼 수 있다.
+
+    <div>달러-원 환율 : <p id="rate_money"></p></div>
+
+    <div class="space">
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주문자 이름</span>
+            </div>
+            <input type="text" class="form-control" aria-label="Username" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <label class="input-group-text" for="inputGroupSelect01">수량</label>
+            </div>
+            <select class="custom-select" id="inputGroupSelect01">
+                <option selected>--수량을 선택하세요--</option>
+                <option value="1">One</option>
+                <option value="2">Two</option>
+                <option value="3">Three</option>
+            </select>
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">주소</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <div class="input-group mb-3">
+            <div class="input-group-prepend">
+                <span class="input-group-text" id="basic-addon1">전화번호</span>
+            </div>
+            <input type="text" class="form-control" aria-describedby="basic-addon1">
+        </div>
+        <button type="button" class="btn btn-primary">주문하기</button>
+    </div>
+</div>
+</body>
+
+</html>
